@@ -1,0 +1,42 @@
+{
+  "EnableAutoQuit": false,
+  "AutoQuitCondition": {
+    "conditionSource": "PlayerVitals.HP.Percent <= 30",
+    "component": null
+  },
+  "AutoQuitKey": 122,
+  "Profiles": {
+    "ProfileEndGame": {
+      "Rules": [
+        {
+          "Conditions": [
+            {
+              "conditionSource": "PlayerVitals.MANA.CURRENT <= 70",
+              "component": null
+            }
+          ],
+          "delayBetweenRuns": 0.0,
+          "Enabled": true,
+          "Name": "Mana",
+          "Key": 117
+        },
+        {
+          "Conditions": [
+            {
+              "conditionSource": "PlayerVitals.HP.PERCENT <= 60",
+              "component": null
+            }
+          ],
+          "delayBetweenRuns": 0.0,
+          "Enabled": true,
+          "Name": "Life",
+          "Key": 69
+        }
+      ]
+    }
+  },
+  "CurrentProfile": "ProfileEndGame",
+  "DebugMode": false,
+  "ShouldRunInHideout": false,
+  "DumpStatusEffectOnMe": 121
+}
